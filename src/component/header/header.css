@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* font-family: 'Raleway', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+/* font-family: 'Roboto Mono', monospace; */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+/* font-family: 'Roboto', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+/* font-family: 'Open Sans', sans-serif; */
+
+.header{
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background-color: #1E252B;
+    width: 100%;
+}
+.header-1 ,.link {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    font-family: 'Roboto Mono', monospace;
+    color: rgba(255, 255, 255, 0.55);
+}
+
+.header-logo {
+    width: 300px;
+}
+
+.header-logo img {
+    width: 100%;
+}
+
+.header-cat {
+    font-weight: 400;
+}
+
+.header-cat ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.header-cat ul li {
+    cursor: pointer;
+    position: relative;
+    font-size: 20px;
+    padding: 3px 5px;
+    transition: border-bottom .5s;
+}
+
+.header-cat ul li::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    top: 110%;
+    background-color: rgba(255, 255, 255, 0.55);
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: opacity .5s;
+    opacity: 0;
+}
+
+.header-cat ul li:hover::before {
+    opacity: 1;
+}
+
+.header-call-btn {
+    font-weight: 700;
+    font-family: 'Roboto Mono', monospace;
+    padding: 10px 20px;
+    background-color: #FF6E30   ;
+    color: rgb(255, 255, 255);
+    font-size: 17px;
+    border-radius: 5px;
+    transition: color .5s, background-color .5s;
+    cursor: pointer;
+    border: none;
+
+}
+
+.header-call-btn:hover {
+    background-color: #ff6e3077;
+    color: rgba(255, 255, 255, 0.563);
+}
+.link:active,.link:hover,.link{
+    text-decoration: none;
+}
