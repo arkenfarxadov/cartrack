@@ -16,7 +16,9 @@
     font-weight: 400;
     color: whitesmoke;
 }
-
+.text-h3{
+    width: 200px;
+}
 .home1-1 h2 {
     text-align: center;
     text-transform: uppercase;
